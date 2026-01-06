@@ -1,3 +1,6 @@
+/* ========================= */
+/* CHECKOUT CONTAINER */
+/* ========================= */
 .checkout-container {
   max-width: 450px;
   margin: 40px auto;
@@ -5,10 +8,12 @@
   background: #ffffff;
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  border: 2px solid #0a66c2; /* light blue border like your project */
+  border: 2px solid #0a66c2;
   font-family: Arial, sans-serif;
+  width: 100%;
 }
 
+/* TITLE */
 .checkout-container h1 {
   text-align: center;
   margin-bottom: 25px;
@@ -16,6 +21,9 @@
   font-size: 26px;
 }
 
+/* ========================= */
+/* FORM */
+/* ========================= */
 .checkout-form label {
   display: block;
   margin-bottom: 15px;
@@ -23,6 +31,7 @@
   color: #0a66c2;
 }
 
+/* INPUTS */
 .checkout-form input,
 .checkout-form select {
   width: 100%;
@@ -40,6 +49,9 @@
   border-color: #084a90;
 }
 
+/* ========================= */
+/* CONFIRM BUTTON */
+/* ========================= */
 .confirm-btn {
   width: 100%;
   margin-top: 20px;
@@ -58,6 +70,9 @@
   background: #084a90;
 }
 
+/* ========================= */
+/* TOTAL BOX */
+/* ========================= */
 .total-box {
   margin-top: 15px;
   padding: 12px;
@@ -68,4 +83,50 @@
   font-weight: bold;
   color: #084a90;
   text-align: center;
+}
+
+/* ========================= */
+/* 📱 MOBILE RESPONSIVE */
+/* ========================= */
+@media (max-width: 768px) {
+  .checkout-container {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+
+  .checkout-container h1 {
+    font-size: 22px;
+  }
+
+  .checkout-form input,
+  .checkout-form select {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .confirm-btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .total-box {
+    font-size: 16px;
+  }
+}
+
+/* ========================= */
+/* 📱 SMALL PHONES */
+/* ========================= */
+@media (max-width: 480px) {
+  .checkout-container {
+    padding: 16px;
+  }
+
+  .checkout-container h1 {
+    font-size: 20px;
+  }
+
+  .confirm-btn {
+    padding: 11px;
+  }
 }
