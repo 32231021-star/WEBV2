@@ -8,7 +8,7 @@ const Dryfoods_Pantry = ({ addToCart }) => {
 
   useEffect(() => {
     axios
-      .get("https://webv2-backend.onrender.co/products/dryfood")
+      .get("https://webv2-backend.onrender.com/products/dryfood")
       .then((res) => {
         setItems(res.data);
         setQuantities(Array(res.data.length).fill(1));
