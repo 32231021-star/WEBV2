@@ -37,7 +37,7 @@ function Checkout({ cart }) {
     }
 
     try {
-      await axios.post("https://webprojectv2-1-backend1.onrender.com/order", {
+      await axios.post("https://webv2-backend.onrender.com/order", {
         fullName: form.fullName,
         mobile: form.mobile,
         address: form.address,
