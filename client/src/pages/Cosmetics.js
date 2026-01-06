@@ -8,7 +8,7 @@ const Cosmetics = ({ addToCart }) => {
 
   useEffect(() => {
     axios
-      .get("https://webprojectv2-1-backend1.onrender.com/products/cosmetics")
+      .get("https://webv2-backend.onrender.com/products/cosmetics")
       .then((res) => {
         setItems(res.data);
         setQuantities(Array(res.data.length).fill(1)); 
