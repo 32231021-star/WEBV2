@@ -21,7 +21,7 @@ function Home() {
         <h2>Our Concept</h2>
 
         <p>
-          Mohamad Market is a Soft-Discounter, Best-Value Supermarket in Lebanon.
+          Samir Market is a Soft-Discounter, Best-Value Supermarket in Lebanon.
           We firmly believe that high quality should not come at a premium price.
         </p>
 
@@ -31,7 +31,7 @@ function Home() {
         </p>
 
         <p>
-          With a strong focus on value and variety, Mohamad Market stands out as
+          With a strong focus on value and variety, Samir Market stands out as
           one of the best supermarket experiences in Lebanon, making everyday
           shopping simple and affordable.
         </p>
