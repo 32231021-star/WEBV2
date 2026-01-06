@@ -1,10 +1,17 @@
+/* ========================= */
+/* PRODUCTS CONTAINER */
+/* ========================= */
 .products-container {
   padding: 25px;
   text-align: center;
   background-color: #f8faff;
   min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
+/* TITLE */
 .products-container h1 {
   font-size: 32px;
   color: #005ac2;
@@ -12,7 +19,9 @@
   margin-bottom: 25px;
 }
 
-
+/* ========================= */
+/* PRODUCTS GRID */
+/* ========================= */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -20,7 +29,9 @@
   padding: 0 20px;
 }
 
-
+/* ========================= */
+/* PRODUCT CARD */
+/* ========================= */
 .product-card {
   background: white;
   border-radius: 12px;
@@ -34,7 +45,7 @@
   transform: translateY(-4px);
 }
 
-
+/* IMAGE */
 .product-card img {
   width: 100%;
   height: 180px;
@@ -42,7 +53,7 @@
   margin-bottom: 10px;
 }
 
-
+/* PRODUCT NAME */
 .product-card h3 {
   font-size: 18px;
   color: #003b85;
@@ -50,7 +61,7 @@
   min-height: 50px;
 }
 
-
+/* PRICE */
 .price {
   font-size: 20px;
   font-weight: bold;
@@ -58,7 +69,9 @@
   margin-bottom: 15px;
 }
 
-
+/* ========================= */
+/* QUANTITY CONTROLS */
+/* ========================= */
 .qty-container {
   display: flex;
   justify-content: center;
@@ -95,7 +108,9 @@
   color: #003b85;
 }
 
-
+/* ========================= */
+/* ADD TO CART BUTTON */
+/* ========================= */
 .add-cart-btn {
   width: 100%;
   background-color: #005ac2;
@@ -112,4 +127,63 @@
 
 .add-cart-btn:hover {
   background-color: #003f8a;
+}
+
+/* ========================= */
+/* 📱 TABLET & MOBILE */
+/* ========================= */
+@media (max-width: 768px) {
+  .products-container {
+    padding: 20px 12px;
+  }
+
+  .products-container h1 {
+    font-size: 26px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+    padding: 0;
+  }
+
+  .product-card img {
+    height: 150px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .qty-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+
+  .qty-value {
+    font-size: 16px;
+  }
+
+  .add-cart-btn {
+    font-size: 15px;
+    padding: 9px 0;
+  }
+}
+
+/* ========================= */
+/* 📱 SMALL PHONES */
+/* ========================= */
+@media (max-width: 480px) {
+  .products-container h1 {
+    font-size: 22px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card img {
+    height: 170px;
+  }
 }
