@@ -8,7 +8,7 @@ const Breakfast = ({ addToCart }) => {
 
   useEffect(() => {
     axios
-      .get("https://webprojectv2-1-backend1.onrender.com/products/breakfast")
+      .get("https://webv2-backend.onrender.com/products/breakfast")
       .then((res) => {
         setItems(res.data);
         setQuantities(Array(res.data.length).fill(1)); 
