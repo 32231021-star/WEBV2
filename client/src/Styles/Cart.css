@@ -1,25 +1,56 @@
+/* ========================= */
+/* CART CONTAINER */
+/* ========================= */
 .cart-container {
   padding: 30px;
   text-align: center;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
+/* ========================= */
+/* CART TABLE (DESKTOP) */
+/* ========================= */
 .cart-table {
   width: 80%;
   margin: auto;
   border-collapse: collapse;
 }
 
-.cart-table th, .cart-table td {
+.cart-table th,
+.cart-table td {
   border: 1px solid #005ac2;
   padding: 10px;
+  text-align: center;
 }
 
+/* ========================= */
+/* PRODUCT IMAGE */
+/* ========================= */
+.cart-item-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  padding: 4px;
+  background: white;
+}
+
+/* ========================= */
+/* TOTAL */
+/* ========================= */
 .cart-total {
   margin-top: 20px;
   font-size: 24px;
   color: #005ac2;
+  font-weight: bold;
 }
 
+/* ========================= */
+/* BUTTONS */
+/* ========================= */
 .remove-btn {
   background-color: red;
   color: white;
@@ -28,6 +59,11 @@
   cursor: pointer;
   border-radius: 5px;
 }
+
+.remove-btn:hover {
+  opacity: 0.85;
+}
+
 .checkout-btn {
   margin-top: 20px;
   padding: 12px 22px;
@@ -43,15 +79,62 @@
 .checkout-btn:hover {
   background-color: #003d99;
 }
-.cart-item-img {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-  padding: 4px;
-  background: white;
+
+/* ========================= */
+/* 📱 MOBILE RESPONSIVE */
+/* ========================= */
+@media (max-width: 768px) {
+  .cart-table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .cart-table th {
+    display: none; /* hide table header on phone */
+  }
+
+  .cart-table tr {
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #005ac2;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .cart-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    padding: 8px 0;
+  }
+
+  .cart-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #005ac2;
+  }
+
+  .cart-item-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .checkout-btn {
+    width: 100%;
+    font-size: 16px;
+  }
 }
 
+/* ========================= */
+/* 📱 SMALL PHONES */
+/* ========================= */
+@media (max-width: 480px) {
+  .cart-container {
+    padding: 15px;
+  }
 
-
+  .cart-total {
+    font-size: 20px;
+  }
+}
