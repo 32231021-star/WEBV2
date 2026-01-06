@@ -1,4 +1,16 @@
-/* ===== HERO SECTION ===== */
+/* ========================= */
+/* PAGE CONTAINER */
+/* ========================= */
+.home-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #f8faff;
+}
+
+/* ========================= */
+/* HERO SECTION */
+/* ========================= */
 .home-hero {
   text-align: center;
   padding: 120px 20px 80px;
@@ -8,16 +20,18 @@
   font-size: 42px;
   font-weight: 700;
   margin-bottom: 10px;
+  color: #004aad;
 }
 
 .home-subtitle {
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 25px;
+  color: #333;
 }
 
 .shop-btn {
-  background: #004AAD; /* BLUE */
+  background: #004aad;
   color: white;
   padding: 12px 32px;
   font-size: 18px;
@@ -28,11 +42,13 @@
 }
 
 .shop-btn:hover {
-  background: #003A8A; /* DARKER BLUE */
+  background: #003a8a;
   transform: scale(1.05);
 }
 
-/* ===== SECTIONS (Concept / Mission / Vision) ===== */
+/* ========================= */
+/* INFO SECTIONS */
+/* ========================= */
 .section-box {
   max-width: 900px;
   margin: 50px auto;
@@ -40,7 +56,7 @@
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
-  border-left: 6px solid #004AAD;
+  border-left: 6px solid #004aad;
   transition: 0.3s ease;
 }
 
@@ -48,15 +64,13 @@
   transform: translateY(-3px);
 }
 
-/* Titles */
 .section-box h2 {
   font-size: 28px;
   font-weight: 700;
-  color: #004AAD;
+  color: #004aad;
   margin-bottom: 15px;
 }
 
-/* Paragraphs */
 .section-box p {
   font-size: 17px;
   line-height: 1.7;
@@ -65,7 +79,7 @@
 }
 
 /* ========================= */
-/* 📱 RESPONSIVE (FIXED) */
+/* 📱 RESPONSIVE */
 /* ========================= */
 @media (max-width: 768px) {
   .home-hero {
