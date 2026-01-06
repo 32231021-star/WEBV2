@@ -1,10 +1,18 @@
-
+/* ========================= */
+/* PRODUCTS CONTAINER */
+/* ========================= */
 .products-container {
   text-align: center;
   padding: 20px;
   background: white;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
+/* ========================= */
+/* PRODUCTS GRID (DESKTOP) */
+/* ========================= */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -12,14 +20,19 @@
   padding: 20px;
 }
 
+/* ========================= */
+/* PRODUCT CARD */
+/* ========================= */
 .product-card {
   background: white;
-  border: 2px solid #005ac2; 
+  border: 2px solid #005ac2;
   border-radius: 10px;
   padding: 15px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
+/* IMAGE */
 .product-card img {
   width: 100%;
   height: 180px;
@@ -27,16 +40,24 @@
   border-radius: 8px;
 }
 
+/* NAME */
 .product-card h3 {
   margin-top: 10px;
   color: #005ac2;
+  font-size: 18px;
 }
 
+/* PRICE */
 .product-card .price {
   font-size: 18px;
   font-weight: bold;
   color: #009933;
+  margin: 10px 0;
 }
+
+/* ========================= */
+/* QUANTITY */
+/* ========================= */
 .qty-container {
   margin-top: 10px;
   display: flex;
@@ -74,6 +95,10 @@
   font-weight: bold;
   color: #003d99;
 }
+
+/* ========================= */
+/* ADD TO CART */
+/* ========================= */
 .add-cart-btn {
   margin-top: 15px;
   width: 100%;
@@ -88,4 +113,47 @@
 
 .add-cart-btn:hover {
   background-color: #003d99;
+}
+
+/* ========================= */
+/* 📱 TABLET */
+/* ========================= */
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* ========================= */
+/* 📱 MOBILE */
+/* ========================= */
+@media (max-width: 768px) {
+  .products-container {
+    padding: 15px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+    gap: 18px;
+  }
+
+  .product-card img {
+    height: 200px;
+  }
+
+  .qty-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 20px;
+  }
+
+  .qty-value {
+    font-size: 18px;
+  }
+
+  .add-cart-btn {
+    font-size: 15px;
+  }
 }
