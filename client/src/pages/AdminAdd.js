@@ -32,7 +32,7 @@ const AdminAdd = () => {
 
     try {
       await axios.post(
-        "https://webprojectv2-1-backend1.onrender.com/product/add",
+        "https://webv2-backend.onrender.com/product/add",
         product
       );
       alert("Product added");
