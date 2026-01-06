@@ -1,115 +1,100 @@
-/* ========================= */
-/* CHECKOUT CONTAINER */
-/* ========================= */
-.checkout-container {
-  max-width: 450px;
-  margin: 40px auto;
-  padding: 25px;
-  background: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  border: 2px solid #0a66c2;
-  font-family: Arial, sans-serif;
-  width: 100%;
+/* ===== HERO SECTION ===== */
+.home-hero {
+  text-align: center;
+  padding: 120px 20px 80px;
 }
 
-/* TITLE */
-.checkout-container h1 {
-  text-align: center;
+.home-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.home-subtitle {
+  font-size: 22px;
+  font-weight: 500;
   margin-bottom: 25px;
-  color: #0a66c2;
-  font-size: 26px;
 }
 
-/* ========================= */
-/* FORM */
-/* ========================= */
-.checkout-form label {
-  display: block;
-  margin-bottom: 15px;
-  font-weight: bold;
-  color: #0a66c2;
-}
-
-/* INPUTS */
-.checkout-form input,
-.checkout-form select {
-  width: 100%;
-  padding: 12px;
-  margin-top: 6px;
-  border-radius: 8px;
-  border: 2px solid #0a66c2;
-  outline: none;
-  font-size: 16px;
-  transition: 0.2s;
-}
-
-.checkout-form input:focus,
-.checkout-form select:focus {
-  border-color: #084a90;
-}
-
-/* ========================= */
-/* CONFIRM BUTTON */
-/* ========================= */
-.confirm-btn {
-  width: 100%;
-  margin-top: 20px;
-  padding: 14px;
-  background: #0a66c2;
-  border: none;
+.shop-btn {
+  background: #004AAD; /* BLUE */
   color: white;
+  padding: 12px 32px;
   font-size: 18px;
-  font-weight: bold;
-  border-radius: 10px;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
-  transition: 0.25s;
+  transition: 0.3s ease;
 }
 
-.confirm-btn:hover {
-  background: #084a90;
+.shop-btn:hover {
+  background: #003A8A; /* DARKER BLUE */
+  transform: scale(1.05);
+}
+
+/* ===== SECTIONS (Concept / Mission / Vision) ===== */
+.section-box {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  border-left: 6px solid #004AAD;
+  transition: 0.3s ease;
+}
+
+.section-box:hover {
+  transform: translateY(-3px);
+}
+
+/* Titles */
+.section-box h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #004AAD;
+  margin-bottom: 15px;
+}
+
+/* Paragraphs */
+.section-box p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 /* ========================= */
-/* TOTAL BOX */
-/* ========================= */
-.total-box {
-  margin-top: 15px;
-  padding: 12px;
-  background: #f5f9ff;
-  border: 2px solid #0a66c2;
-  border-radius: 10px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #084a90;
-  text-align: center;
-}
-
-/* ========================= */
-/* 📱 MOBILE RESPONSIVE */
+/* 📱 RESPONSIVE (FIXED) */
 /* ========================= */
 @media (max-width: 768px) {
-  .checkout-container {
-    margin: 20px 10px;
-    padding: 20px;
+  .home-hero {
+    padding: 80px 15px 50px;
   }
 
-  .checkout-container h1 {
-    font-size: 22px;
+  .home-title {
+    font-size: 32px;
   }
 
-  .checkout-form input,
-  .checkout-form select {
-    font-size: 15px;
-    padding: 10px;
+  .home-subtitle {
+    font-size: 18px;
   }
 
-  .confirm-btn {
+  .shop-btn {
     font-size: 16px;
-    padding: 12px;
+    padding: 10px 26px;
   }
 
-  .total-box {
+  .section-box {
+    margin: 25px 15px;
+    padding: 25px;
+  }
+
+  .section-box h2 {
+    font-size: 24px;
+  }
+
+  .section-box p {
     font-size: 16px;
   }
 }
@@ -118,15 +103,28 @@
 /* 📱 SMALL PHONES */
 /* ========================= */
 @media (max-width: 480px) {
-  .checkout-container {
-    padding: 16px;
+  .home-hero {
+    padding: 60px 12px 40px;
   }
 
-  .checkout-container h1 {
-    font-size: 20px;
+  .home-title {
+    font-size: 26px;
   }
 
-  .confirm-btn {
-    padding: 11px;
+  .home-subtitle {
+    font-size: 16px;
+  }
+
+  .shop-btn {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .section-box {
+    padding: 20px;
+  }
+
+  .section-box h2 {
+    font-size: 22px;
   }
 }
