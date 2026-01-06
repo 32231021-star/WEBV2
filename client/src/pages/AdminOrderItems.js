@@ -10,7 +10,7 @@ const AdminOrderItems = () => {
   useEffect(() => {
     axios
       .get(
-        "https://webprojectv2-1-backend1.onrender.com/order-items/" + orderId
+        "https://webv2-backend.onrender.com/order-items/" + orderId
       )
       .then((res) => setItems(res.data))
       .catch((err) => console.log(err));
