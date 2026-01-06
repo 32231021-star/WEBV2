@@ -13,7 +13,7 @@ const AdminEdit = () => {
   useEffect(() => {
     axios
       .get(
-        "https://webprojectv2-1-backend1.onrender.com/product/" + id
+        "https://webv2-backend.onrender.com/product/" + id
       )
       .then((res) => setProduct(res.data))
       .catch((err) => {
@@ -35,7 +35,7 @@ const AdminEdit = () => {
 
     try {
       await axios.put(
-        "https://webprojectv2-1-backend1.onrender.com/product/update/" + id,
+        "https://webv2-backend.onrender.com/product/update/" + id,
         product
       );
       alert("Product updated");
