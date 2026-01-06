@@ -1,18 +1,89 @@
+/* ========================= */
+/* REVIEW CARD */
+/* ========================= */
 .review-card {
   border-radius: 12px;
   background: #ffffff;
+  padding: 25px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* ========================= */
+/* INPUTS & TEXTAREA */
+/* ========================= */
 .review-card input,
 .review-card textarea {
+  width: 100%;
   border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  outline: none;
 }
 
+.review-card input:focus,
+.review-card textarea:focus {
+  border-color: #005ac2;
+}
+
+/* TEXTAREA */
 .review-card textarea {
   resize: none;
+  min-height: 120px;
 }
 
+/* ========================= */
+/* BUTTON */
+/* ========================= */
 .review-card button {
+  width: 100%;
   border-radius: 10px;
   font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+  background-color: #005ac2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.review-card button:hover {
+  background-color: #003d99;
+}
+
+/* ========================= */
+/* 📱 MOBILE RESPONSIVE */
+/* ========================= */
+@media (max-width: 768px) {
+  .review-card {
+    padding: 20px;
+    margin: 0 10px;
+  }
+
+  .review-card input,
+  .review-card textarea {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .review-card button {
+    font-size: 15px;
+    padding: 11px;
+  }
+}
+
+/* ========================= */
+/* 📱 SMALL PHONES */
+/* ========================= */
+@media (max-width: 480px) {
+  .review-card {
+    padding: 16px;
+  }
+
+  .review-card textarea {
+    min-height: 100px;
+  }
 }
