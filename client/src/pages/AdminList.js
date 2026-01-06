@@ -8,7 +8,7 @@ const AdminList = () => {
 
   useEffect(() => {
     axios
-      .get("https://webprojectv2-1-backend1.onrender.com/products")
+      .get("https://webv2-backend.onrender.com/products")
       .then((res) => setItems(res.data))
       .catch((err) => console.log(err));
   }, []);
@@ -18,7 +18,7 @@ const AdminList = () => {
 
     try {
       await axios.delete(
-        "https://webprojectv2-1-backend1.onrender.com/product/delete/" + id
+        "https://webv2-backend.onrender.com/product/delete/" + id
       );
       setItems((prev) => prev.filter((i) => i.id !== id));
     } catch (err) {
