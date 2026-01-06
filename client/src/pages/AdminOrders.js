@@ -9,7 +9,7 @@ const AdminOrders = () => {
 
   useEffect(() => {
     axios
-      .get("https://webprojectv2-1-backend1.onrender.com/orders")
+      .get("https://webv2-backend.onrender.com/orders")
       .then((res) => setOrders(res.data))
       .catch((err) => console.log(err));
   }, []);
