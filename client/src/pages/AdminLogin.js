@@ -16,7 +16,7 @@ const AdminLogin = () => {
 
     try {
       const res = await axios.post(
-        "https://webprojectv2-1-backend1.onrender.com/admin/login",
+        "https://webv2-backend.onrender.com/admin/login",
         {
           username,
           password,
