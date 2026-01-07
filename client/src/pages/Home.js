@@ -10,7 +10,7 @@ function Home() {
 
       <div className="home-hero">
         <h1 className="home-title">Shop Smart, Save Big</h1>
-        <h2 className="home-subtitle">Samir Market Lebanon</h2>
+        <h2 className="home-subtitle">Mohamad Market Lebanon</h2>
 
         <button className="shop-btn" onClick={() => navigate("/fruits")}>
           Shop Now
@@ -21,7 +21,7 @@ function Home() {
         <h2>Our Concept</h2>
 
         <p>
-          Samir Market is a Soft-Discounter, Best-Value Supermarket in Lebanon.
+          Mohamad Market is a Soft-Discounter, Best-Value Supermarket in Lebanon.
           We firmly believe that high quality should not come at a premium price.
         </p>
 
